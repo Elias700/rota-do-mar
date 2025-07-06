@@ -1,20 +1,41 @@
 
-/*5. BeachCard.tsx – Componente para mostrar praia
-Mostra um “cartão” com nome, bairro, clima e maré.
+// src/components/BeachCard.tsx
 
-Exemplo:
-tsx
-Copiar
-Editar
-import { Beach } from '../types';
+import React from 'react';
+import styles from './BeachCard.module.css';
 
-type Props = { beach: Beach };
+type BeachCardProps = {
+  name: string;
+  district: string;
+  type: string;
+  weather: string;
+  tide: string;
+  mapLink: string;
+  detailLink: string;
+};
 
-const BeachCard = ({ beach }: Props) => (
-  <div className=\"beach-card\">
-    <h3>{beach.name}</h3>
-    <p><strong>Bairro:</strong> {beach.neighborhood}</p>
-    <p><strong>Tipo:</strong> {beach.type}</p>
-    <button>Detalhes</button>
-  </div>
-);*/
+const BeachCard: React.FC<BeachCardProps> = ({
+  name,
+  district,
+  type,
+  weather,
+  tide,
+  mapLink,
+  detailLink,
+}) => {
+  return (
+    <div className={styles.card}>
+      <h3>📍 {name}</h3>
+      <p><strong>Bairro:</strong> {district}</p>
+      <p><strong>Tipo:</strong> {type}</p>
+      <p><strong>Clima:</strong> {weather}</p>
+      <p><strong>Maré:</strong> {tide}</p>
+      <div className={styles.buttons}>
+        <a href={mapLink}>🗺️ Ver no mapa</a>
+        <a href={detailLink}>ℹ️ Detalhes</a>
+      </div>
+    </div>
+  );
+};
+
+export default BeachCard;

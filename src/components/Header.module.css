@@ -1,7 +1,16 @@
 
+:root {
+  --color-blue: #0077cc;
+  --color-bluesecondary: #a8d5ff;
+  --color-greewater: #2BBBAD;
+  --color-white: #fafafa;
+  --color-black: #2d2d2d;
+  --color-gold: #FFD166;
+}
+
 
 header {
-  background-color: #0077cc;
+  background: var(--color-blue);
   padding: 16px 32px;
   color: white;
   font-family: 'Segoe UI', sans-serif;
