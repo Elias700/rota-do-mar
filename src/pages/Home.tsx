@@ -15,7 +15,7 @@ const Home = () => {
                 </nav>
             </header>
 
-            <section className='container-section'>
+            <section className={styles.container2}> 
                 <section>
                     <div>
                         <h1 className={styles.title}>Bem-vindo ao Rota do Mar</h1>
@@ -30,7 +30,7 @@ const Home = () => {
                 </section>
 
                 <section className={styles.pesquisa}>
-                    <h3>Descubra as melhores praias da sua cidade</h3>
+                    <h3 className={styles.subtitle}>Descubra as melhores praias da sua cidade</h3>
                     <input type="text" placeholder="Pesquise sua praia preferida"/>
                 </section>
             </section>

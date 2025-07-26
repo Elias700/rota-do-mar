@@ -7,11 +7,19 @@ html{
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 
 :root{
     --cor-primaria: #0077CC;
+    --cor-segundaria: #ffffffd2;
+}
+
+.container{
+    background: url('../assets/pexels-conojeghuo-127673.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 header ul{
@@ -36,11 +44,19 @@ li:hover{
 .title{
     text-align: center;
     padding: 20px;
+    font-size: 2rem;
+    color: var(--cor-segundaria);
 }
+
+.container2{
+    padding: 60px;
+}
+
 
 h3{
     text-align: center;
-    padding: 20px;
+    padding: 50px;
+    color: var(--cor-segundaria);
 }
 
 .cards{
@@ -60,7 +76,12 @@ h3{
 }
 
 .card:hover{
-    background: var(--cor-primaria);
+    background:  #196296;
+    color: #FFD166;
+}
+
+.subtitle{
+    padding: 20px;
 }
 
 .pesquisa {
@@ -68,8 +89,12 @@ h3{
   flex-direction: column; /* mantém os itens em coluna */
   align-items: center;     /* centraliza horizontalmente */
   text-align: center;      /* centraliza o texto */
-  padding: 20px;
   gap: 10px;
+  padding: 40px;
+}
+
+input::placeholder{
+    color: var(--cor-primaria);
 }
 
 input{
