@@ -22,16 +22,20 @@ html{
     height: 100vh;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--cor-segundaria);
+}
+
 header ul{
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 25px;
-    background: linear-gradient(#0077CC, #196296);
+    gap: 20px;
+    align-items: center;
 }
 
 li{
-    color: #ffffffcc;
+    color: var(--cor-primaria);
     font-size: 25px;
     cursor: pointer;
     transition: 1s;
@@ -39,6 +43,11 @@ li{
 
 li:hover{
     color: #FFD166; 
+}
+
+.usuario{
+    display: flex;
+    justify-content: end;
 }
 
 .title{
@@ -51,7 +60,6 @@ li:hover{
 .container2{
     padding: 60px;
 }
-
 
 h3{
     text-align: center;

@@ -1,10 +1,15 @@
+
 import styles from './Home.module.css';
+import logo from '../assets/logo.png'
+import user from '../assets/icone-usuario.png'
 
 const Home = () => {
     return (
         <div className={styles.container}>
             <header>
+                
                 <nav>
+                    <img src={logo} alt="logo" className='logo' height={'100px'}/>
                     <ul>
                         <li>Home</li>
                         <li>Praias</li>
@@ -12,7 +17,9 @@ const Home = () => {
                         <li>Previsão do Tempo</li>
                         <li>Contato</li>
                     </ul>
+                    <img src={user} alt="icone-usuario" className='usuario' height={'60px'}/>
                 </nav>
+                
             </header>
 
             <section className={styles.container2}> 
